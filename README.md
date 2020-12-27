@@ -8,14 +8,12 @@ During the roles execution, icon cache will also be cleared however may require 
 
 ## Requirements
 
-None.
+Expects dockutil to be already istalled. (can be done via homebrew)
 
 ## Role Variables
 
 ### Administration
 ````yaml
-# The URL to the physical file where dockutil is available.
-dockutil_url: https://raw.githubusercontent.com/kcrawford/dockutil/master/scripts/dockutil
 # The installation path the above URL will be downloaded to.
 dockutil_install_path: /usr/local/bin/dockutil
 ````
