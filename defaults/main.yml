@@ -6,10 +6,8 @@
 # To manage dock items.
 #
 
-dockutil_install_path: /usr/local/bin/dockutil
-
+dockutil_install_path: "{{ lookup('env', 'BREW_PREFIX') | default('/usr/local') }}/bin/dockutil"
 dockitems_remove_all: false
-
 dockitems_disabled:
   - Launchpad
   - Mail

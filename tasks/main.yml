@@ -8,7 +8,7 @@
 - name: Hard fail if dockutil is not installed
   fail:
     msg: "Missing dockutil - install with homebrew"
-  when: not dockutil.stat.exists
+  when: not dockutil_stat.stat.exists
 
 - name: Dockutil | Get information on items to remove
   shell: "{{ dockutil_install_path }} --find '{{ item }}'"
